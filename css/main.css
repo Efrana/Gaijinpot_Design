@@ -1,0 +1,213 @@
+#jobcontent{
+    background-color: #f6f6f6;
+}
+
+.banner-img{
+    width: 100%;
+}
+.jumbotron {
+    padding: 0rem 0rem!important;
+    margin-bottom: 0rem!important;
+    background-color: white!important;
+}
+.adver-content{
+    border: 2px solid gray;
+}
+.title{
+    font-size: 40px;
+    line-height: 35px;
+    font-weight: 900;
+    font-family: 'Helvetica Neue,Segoe UI,Helvetica,Arial,sans-serif';
+}
+.add-img{
+    width: 100%;
+}
+.adver-margin{
+    margin-bottom: 9%;
+}
+.subscribe-btn{
+    width: 100%!important;
+}
+.topic li{
+    float: left;
+}
+.essential-list-item{
+    display: inline-block;
+}
+.link-divider{
+    display:inline-block;
+    font-size: 50px;
+}
+.img-fullwidth{
+    width: 100%;
+    height: 100%;
+}
+.nav-custom{
+    color: #8f8f8f!important;
+    font-family: Helvetica Neue,Segoe UI,Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+}
+.pink-title{
+    color:#ff4c6e ;
+}
+.common-btn{
+    border: 2px solid #ff4c6e!important;
+    border-radius: 20px!important;
+    padding: 8px 28px!important;
+    letter-spacing: .16px!important;
+    line-height: 1.2!important;
+    font-size: 16px!important;
+    font-weight: 300!important;
+    color: #383838!important;
+    background: transparent!important;
+    font-family: Helvetica Neue,Segoe UI,Helvetica,Arial,sans-serif;
+
+}
+.gray-btn{
+    border: 1px solid #adb5bd!important;
+    border-radius: 20px!important;
+    padding: 8px 28px!important;
+    letter-spacing: .16px!important;
+    line-height: 1.2!important;
+    font-size: 16px!important;
+    font-weight: 300!important;
+    color: #383838!important;
+    background: transparent!important;
+    font-family: Helvetica Neue,Segoe UI,Helvetica,Arial,sans-serif;
+
+}
+.adver{
+    font-size: 12px;
+    line-height: 16.9px;
+    letter-spacing: -.2px;
+    font-weight: 300;
+    color: gray;
+    text-transform: uppercase;
+    
+}
+.adver-title{
+    color: #333;
+    font-weight: 700;
+    font-family: HelveticaNeueLTStd,Helvetica Neue,Helvetica,Segoe UI,Roboto,TBUDRGothic Std,tbudrgothic-std,Arial,sans-serif;
+}
+.adver-body{
+    color: #333;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: -.28px;
+    
+}
+.adver-body2{
+    color: #333;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: -.28px;
+    padding-bottom: 3%;
+    
+}
+.caro-img{
+    width: 100%;
+    height: 100%;
+}
+.no-border{
+ border: 0px solid white!important;
+}
+.card-sm-title{
+    color: rgb(255, 76, 110);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -.28px;
+}
+.common-title{
+    font-family: Helvetica Neue,Segoe UI,Helvetica,Arial,sans-serif;
+    color: #383838;
+    font-size: 53px;
+    line-height: 53px;
+    letter-spacing: -.84px;
+}
+.common-para{
+    font-family: Helvetica Neue,Segoe UI,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 26px;
+    color: #383838;
+}
+.pink-header{
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -.32px;
+    color: #ff4c6e;
+}
+.pyt-4{
+    padding-top: 3rem;
+}
+.no-p{
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    
+}
+.inside-link{
+    position: relative;
+    top: 55%;
+    z-index: 3;
+    color: white;
+    margin-left: 10%;
+}
+.img-pos{
+  position:absolute;
+ 
+}
+.tag{
+    font-size: 34px;
+    line-height: 34px;
+    letter-spacing: -1.36px;
+    color: #fff;
+    font-weight: 700;
+}
+.card-border{
+    border-bottom-right-radius: 25px!important;
+}
+/* //////////////////////////// */
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    color: gray;
+    padding: 10px 15px;
+    border: none;
+  }
+  
