@@ -16,7 +16,9 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+
     <!-- font awesome link -->
     <script src="https://use.fontawesome.com/f2988b3c12.js">
     </script>
@@ -34,19 +36,46 @@
     <!-- navbar start -->
     <header>
         <div class=" d-flex">
-            <div>
-                <i class="fa fa-search" aria-hidden="true"></i>
+            <div class="search-icon">
+                <a href="search.html"><i class="fa fa-search" aria-hidden="true" style="color: gray;"></i></a>
             </div>
-            <div>
-                <div id="mySidepanel" class="sidepanel">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Clients</a>
-                    <a href="#">Contact</a>
-                </div>
+            <div class="sidebar">
+                <a onclick="myFunction()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+                <div id="myDIV" style="display: none;">
+                    <a href="#" onclick="closeit()"><i class="fa fa-window-close cus-close" aria-hidden="true"></i></a>
+                    <ul>
+                        <li>
+                            <a href="#" class="side-cus">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-cus">partments</a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-cus">Study</a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-cus">Travel</a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-cus">Store</a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-cus">Classifieds</a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-cus">Health</a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-cus">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#" class="side-cus">Search <i class="fa fa-search" aria-hidden="true" ></i></a>
+                        </li>
+                    </ul>
 
-                <button class="openbtn" onclick="openNav()">☰ </button>
+                </div>
             </div>
         </div>
         <div class="text-center">
@@ -114,46 +143,42 @@
             <div class="fluid-container">
                 <img src="img/banner.jpg" class="img-responsive banner-img" />
             </div>
-
         </div>
     </section>
 
     <!-- banner section end  -->
     <!-- dream job section start -->
     <section id="jobcontent">
-        <div class="container">
+        <div class="container position-relative">
+            <img src="img/job-image.png" class="img-responsive content-img" />
             <div class="row d-flex">
-                <div class="col-lg-8 align-self-center">
-                    <div>
+                <div class="col-8 col-lg-6  content-pos">
+                    <div class="content-div">
                         <span class="pink-header">GaijinPot Jobs</span>
-                        <h2 class="common-title">Land your dream job<br />in japan</h2>
+                        <h2 class="common-title">Land your dream <br />job in japan</h2>
                         <p class="common-para">There is a position that's perfect for you on<br />Japan's No.1 English
                             job board.</p>
                         <button class="btn common-btn">Search now</button>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <img src="img/job-image.png" class="img-responsive banner-img" />
-                </div>
+
             </div>
         </div>
     </section>
     <!-- dream job section end  -->
     <!-- study section start  -->
     <section>
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-lg-4">
-                    <img src="img/student.png" class="img-responsive banner-img" />
-                </div>
-                <div class="col-lg-8 align-self-center">
-                    <div>
+        <div class="container position-relative">
+            <img src="img/student.png" class="img-responsive content-img2" />
+            <div class="row ">
+                <div class="col-8 col-lg-6 mx-auto  content-pos">
+                    <div class="content-div">
                         <span class="pink-header">GaijinPot Study</span>
                         <h2 class="common-title">Studying in Japan<br />made easy</h2>
                         <p class="common-para">Our program offers full support to study<br />Japanese or pursue higher
                             education in Japan.
                         </p>
-                        <button class="btn common-btn">Apply now</button>
+                        <button class="btn common-btn" class="content-div">Apply now</button>
                     </div>
                 </div>
 
@@ -163,10 +188,11 @@
     <!-- study section end  -->
     <!-- looking home section start  -->
     <section id="jobcontent">
-        <div class="container">
-            <div class="row d-flex">
-                <div class="col-lg-8 align-self-center">
-                    <div>
+        <div class="container position-relative">
+            <img src="img/home.png" class="img-responsive content-img3" />
+            <div class="row ">
+                <div class="col-lg-8  content-pos">
+                    <div class="content-div">
                         <span class="pink-header">GaijinPot Apartments</span>
                         <h2 class="common-title"><strong>Looking for a new<br />home in Japan?</strong></h2>
                         <p class="common-para">Make the process simple with our foreginer-<br />friendly listings and
@@ -175,43 +201,54 @@
                         <button class="btn common-btn">Browse now</button>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <img src="img/home.png" class="img-responsive banner-img" />
-                </div>
             </div>
         </div>
     </section>
     <!-- looking home secion end  -->
     <!-- more on Gaijinpot content start  -->
     <section>
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-center">
-                        <h2>More from GaijinPot</h2>
+        <div class="squares mx-auto py-5">
+            <div class="text-center">
+                <h2>More from GaijinPot</h2>
+            </div>
+            <div class="row no-gutters pyt-4">
+                <div class="col-12 col-sm-6 ">
+                    <div>
+                        <img src="img/moreimg1.jpg" class="img-responsive img-fullwidth img-pos" />
+                        <div class="square-part">
+                            <h1 class="blog-title">The Blog</h1>
+                            <p class="blog-para">Insider news, views <br />and resources</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 ">
+                    <div>
+                        <img src="img/caro-img9.gif" class="img-responsive img-fullwidth img-pos" />
+                        <div class="square-part">
+                            <h1 class="blog-title">Recommended jobs</h1>
+                            <p class="blog-para">Top picks from this<br /> week</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row pyt-4">
-                <div class="col-md-6 no-p">
-                    <div class="inside-link">
-                        <p class="sm-title">The Blog</p>
-                        <h3 class="tag">Insider news,<br /> Views and resources</h3>
-                    </div>
-                    <img src="img/moreimg1.jpg" class="img-responsive img-fullwidth img-pos" />
-                </div>
-                <div class="col-md-6 no-p">
-
-                    <img src="img/caro-img9.gif" class="img-responsive img-fullwidth " />
-                </div>
-            </div>
             <div class="row">
-                <div class="col-md-6 no-p">
-
-                    <img src="img/more2.jpg" class="img-responsive img-fullwidth" />
+                <div class="col-12 col-sm-6 ">
+                    <div>
+                        <img src="img/more2.jpg" class="img-responsive img-fullwidth img-pos" />
+                        <div class="square-part">
+                            <h1 class="blog-title">Study Resources</h1>
+                            <p class="blog-para">Teach yourself <br />Japanese</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 no-p">
-                    <img src="img/more3.jpg" class="img-responsive img-fullwidth " />
+                <div class="col-12 col-sm-6 ">
+                    <div>
+                        <img src="img/more3.jpg" class="img-responsive img-fullwidth img-pos" />
+                        <div class="square-part">
+                            <h1 class="blog-title">Travel Guide</h1>
+                            <p class="blog-para">Discover the best of <br />Japan with us</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -263,6 +300,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    <div class="text-center">
+                        <h3 class="sm-header">Latest Articles</h3>
+                    </div>
+
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -271,11 +312,11 @@
                                         <div class="card no-border">
                                             <div class="card-body text-center" style="padding: 0rem;">
                                                 <div>
-                                                    <img class=" caro-img " src="img/caro-img1.jpg"
-                                                        alt="First slide">
+                                                    <img class=" caro-img " src="img/caro-img1.jpg" alt="First slide">
                                                 </div>
-                                                <span class="card-sm-title">Learn</span>
-                                                <h4>Tweet of the week #116: pui <br />Molcar driving TwitterWild</h4>
+                                                <p class="card-sm-title">Learn</p>
+                                                <h4 class="content-header">Tweet of the week #116: pui <br />Molcar
+                                                    driving TwitterWild</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -283,8 +324,8 @@
                                         <div class="card no-border">
                                             <div class="card-body text-center" style="padding: 0rem;">
                                                 <img class="caro-img" src="img/caro-img2.gif" alt="First slide">
-                                                <span class="card-sm-title">Learn</span>
-                                                <h4>2021 Top Jobs in Japan week 4</h4>
+                                                <p class="card-sm-title">Learn</p>
+                                                <h4 class="content-header">2021 Top Jobs in Japan week 4</h4>
 
                                             </div>
                                         </div>
@@ -293,8 +334,9 @@
                                         <div class="card no-border">
                                             <div class="card-body text-center" style="padding: 0rem;">
                                                 <img class="caro-img" src="img/caro-img3.jpg" alt="First slide">
-                                                <span class="card-sm-title">Learn</span>
-                                                <h4>Tweet of the Week #115: Standardized<br />University Entrance Exam
+                                                <p class="card-sm-title">Learn</p>
+                                                <h4 class="content-header">Tweet of the Week #115:
+                                                    Standardized<br />University Entrance Exam
                                                     Kanji Trap</h4>
                                             </div>
                                         </div>
@@ -308,11 +350,11 @@
                                         <div class="card no-border">
                                             <div class="card-body text-center" style="padding: 0rem;">
                                                 <div>
-                                                    <img class="caro-img" src="img/caro-img4.jpg"
-                                                        alt="First slide">
+                                                    <img class="caro-img" src="img/caro-img4.jpg" alt="First slide">
                                                 </div>
-                                                <span class="card-sm-title">Learn</span>
-                                                <h4>Tweet of the Week #115: Standardized<br />University Entrance Exam
+                                                <p class="card-sm-title">Learn</p>
+                                                <h4 class="content-header">Tweet of the Week #115:
+                                                    Standardized<br />University Entrance Exam
                                                     Kanji Trap</h4>
                                             </div>
                                         </div>
@@ -321,8 +363,9 @@
                                         <div class="card no-border">
                                             <div class="card-body text-center" style="padding: 0rem;">
                                                 <img class="caro-img" src="img/caro-img5.gif" alt="First slide">
-                                                <span class="card-sm-title">Learn</span>
-                                                <h4>Tweet of the Week #115: Standardized<br />University Entrance Exam
+                                                <p class="card-sm-title">Learn</p>
+                                                <h4 class="content-header">Tweet of the Week #115:
+                                                    Standardized<br />University Entrance Exam
                                                     Kanji Trap</h4>
                                             </div>
                                         </div>
@@ -331,8 +374,9 @@
                                         <div class="card no-border">
                                             <div class="card-body text-center" style="padding: 0rem;">
                                                 <img class="caro-img" src="img/cari-img6.jpg" alt="First slide">
-                                                <span class="card-sm-title">Learn</span>
-                                                <h4>Tweet of the Week #115: Standardized<br />University Entrance Exam
+                                                <p class="card-sm-title">Learn</p>
+                                                <h4 class="content-header">Tweet of the Week #115:
+                                                    Standardized<br />University Entrance Exam
                                                     Kanji Trap</h4>
                                             </div>
                                         </div>
@@ -346,12 +390,11 @@
                                         <div class="card no-border">
                                             <div class="card-body text-center" style="padding: 0rem;">
                                                 <div>
-                                                    <img class="caro-img" src="img/caro-img7.jpg"
-                                                        alt="First slide">
+                                                    <img class="caro-img" src="img/caro-img7.jpg" alt="First slide">
                                                 </div>
-                                                <span>Learn</span>
-                                                <h4>Tweet of the Week #115: Standardized<br />University Entrance Exam
-                                                    Kanji Trap</h4>
+                                                <p class="card-sm-title">Culture</p>
+                                                <h4 class="content-header">Japan’s COVID-19 State of <br />Emergency:
+                                                    What You Need to Know</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -359,8 +402,9 @@
                                         <div class="card no-border">
                                             <div class="card-body text-center" style="padding: 0rem;">
                                                 <img class="caro-img " src="img/caro-img8.jpg" alt="First slide">
-                                                <span >Learn</span>
-                                                <h4>Tweet of the Week #115: Standardized<br />University Entrance Exam
+                                                <p class="card-sm-title">Learn</p>
+                                                <h4 class="content-header">Tweet of the Week #115:
+                                                    Standardized<br />University Entrance Exam
                                                     Kanji Trap</h4>
                                             </div>
                                         </div>
@@ -369,8 +413,9 @@
                                         <div class="card no-border">
                                             <div class="card-body text-center" style="padding: 0rem;">
                                                 <img class="caro-img" src="img/caro-img9.gif" alt="First slide">
-                                                <span>Learn</span>
-                                                <h4>Tweet of the Week #115: Standardized<br />University Entrance Exam
+                                                <p class="card-sm-title">Learn</p>
+                                                <h4 class="content-header">Tweet of the Week #115:
+                                                    Standardized<br />University Entrance Exam
                                                     Kanji Trap</h4>
                                             </div>
                                         </div>
@@ -379,13 +424,12 @@
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
                                 data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
+                                <i class="fa fa-angle-left caro-icon" aria-hidden="true"></i>
+
                             </a>
                             <a class="carousel-control-next" href="#carouselExampleControls" role="button"
                                 data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
+                                <i class="fa fa-angle-right caro-icon" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -395,47 +439,72 @@
     <!-- latest article caresoul end  -->
     <!-- japan 101 content section  -->
     <section>
-        <div class="container">
+        <div class="container py-4">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h3>Japan 101</h3>
-                    <ul>
-                        <li class="essential-list-item"><a href="#">Banking and Finance</a></li>
-                        <li class="link-divider">.</li>
-                        <li class="essential-list-item"><a href="#">Country Guid and travel Tips</a></li>
-                        <li class="link-divider">.</li>
-                        <li class="essential-list-item"><a href="#">Doctors, Dentists and Staying Healthy</a></li>
+                    <h3 class="sm-header">Japan 101</h3>
+                    <ul class="ul-des">
+                        <li class="essential-list-item"><a href="#" class="items">Banking and Finance</a></li>
+                        <li class="link-divider ">
+                            <div class="circle"></div>
+                        </li>
+                        <li class="essential-list-item"><a href="#" class="items">Country Guid and travel Tips</a></li>
+                        <li class="link-divider ">
+                            <div class="circle"></div>
+                        </li>
+                        <li class="essential-list-item"><a href="#" class="items">Doctors, Dentists and Staying
+                                Healthy</a></li>
                     </ul>
-                    <ul>
-                        <li class="essential-list-item"><a href="#">Driving and Cycling</a></li>
-                        <li class="link-divider">.</li>
-                        <li class="essential-list-item"><a href="#">Getting Around </a></li>
-                        <li class="link-divider">.</li>
-                        <li class="essential-list-item"><a href="#">Higher Education and Studying Japanese</a></li>
+                    <ul class="ul-des">
+                        <li class="essential-list-item"><a href="#" class="items">Driving and Cycling</a></li>
+                        <li class="link-divider ">
+                            <div class="circle"></div>
+                        </li>
+                        <li class="essential-list-item"><a href="#" class="items">Getting Around </a></li>
+                        <li class="link-divider ">
+                            <div class="circle"></div>
+                        </li>
+                        <li class="essential-list-item"><a href="#" class="items">Higher Education and Studying
+                                Japanese</a></li>
                     </ul>
-                    <ul>
-                        <li class="essential-list-item"><a href="#">How to Buy Tokyo 2020 Olympic Tickets (For Japan
+                    <ul class="ul-des">
+                        <li class="essential-list-item"><a href="#" class="items">How to Buy Tokyo 2020 Olympic Tickets
+                                (For Japan
                                 Residents)</a></li>
-                        <li class="link-divider">.</li>
-                        <li class="essential-list-item"><a href="#">How to Get a Smartphone</a></li>
-                        <li class="link-divider">.</li>
-                        <li class="essential-list-item"><a href="#">Jobs and Employment </a></li>
-                        <li class="link-divider">.</li>
-                        <li class="essential-list-item"><a href="#">Life in the Neighborhoods </a></li>
+                        <li class="link-divider ">
+                            <div class="circle"></div>
+                        </li>
+                        <li class="essential-list-item"><a href="#" class="items">How to Get a Smartphone</a></li>
+                        <li class="link-divider ">
+                            <div class="circle"></div>
+                        </li>
+                        <li class="essential-list-item"><a href="#" class="items">Jobs and Employment </a></li>
+                        <li class="link-divider ">
+                            <div class="circle"></div>
+                        </li>
+                        <!-- <li class="essential-list-item"><a href="#" class="items">Life in the Neighborhoods </a></li> -->
                     </ul>
-                    <ul>
-                        <li class="essential-list-item"><a href="#">Marriage, Divorce, Dating and Relationships</a></li>
-                        <li class="link-divider">.</li>
-                        <li class="essential-list-item"><a href="#">Moving In and Moving Out</a></li>
-                        <li class="link-divider">.</li>
-                        <li class="essential-list-item"><a href="#">Natural Disasters, Accidents and Emergencies </a>
+                    <ul class="ul-des">
+                        <li class="essential-list-item"><a href="#" class="items">Marriage, Divorce, Dating and
+                                Relationships</a></li>
+                        <li class="link-divider ">
+                            <div class="circle"></div>
+                        </li>
+                        <li class="essential-list-item"><a href="#" class="items">Moving In and Moving Out</a></li>
+                        <li class="link-divider ">
+                            <div class="circle"></div>
+                        </li>
+                        <li class="essential-list-item"><a href="#" class="items">Natural Disasters, Accidents and
+                                Emergencies </a>
                         </li>
 
                     </ul>
-                    <ul>
-                        <li class="essential-list-item"><a href="#">HSending and Receiving Mail</a></li>
-                        <li class="link-divider">.</li>
-                        <li class="essential-list-item"><a href="#">Shopping and Souvenirs</a></li>
+                    <ul class="ul-des">
+                        <li class="essential-list-item"><a href="#" class="items">HSending and Receiving Mail</a></li>
+                        <li class="link-divider ">
+                            <div class="circle"></div>
+                        </li>
+                        <li class="essential-list-item"><a href="#" class="items">Shopping and Souvenirs</a></li>
                     </ul>
 
                 </div>
@@ -448,10 +517,11 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-8 mx-auto">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <h3 class="card-title">Signup for our newsletter</h3>
-                            <p class="card-text">Don't miss out on the latest jobs,travel destinations and Japan advice
+                    <div class="card card-top">
+                        <div class="card-body text-center card-cus ">
+                            <h3 class="card-title sign-header">Signup for our newsletter</h3>
+                            <p class="card-text sign-body">Don't miss out on the latest jobs,travel destinations and
+                                Japan advice
                                 straight to your inbox
                             </p>
                         </div>
@@ -459,14 +529,13 @@
                     <div class="py-1">
                         <form>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                <input type="email" class="form-control inpute-des" id="exampleInputEmail1"
                                     aria-describedby="emailHelp" placeholder="Enter your email here">
+                                <button class="btn subscribe-btn">Subscribe</button>
                             </div>
                         </form>
                     </div>
-                    <div>
-                        <button class="btn subscribe-btn">Subscribe</button>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -477,42 +546,43 @@
             <div class="row">
                 <div class="col text-center p-4">
                     <div class="py-4">
-                        <span>Jobs</span>
-                        <span> Study</span>
-                        <span> Travel</span>
-                        <span> Apartments</span>
-                        <span> Store</span>
-                        <span> Classifieds</span>
-                        <span> Health</span>
-                        <span> Blog</span>
+                        <span class="f-content">Jobs</span>
+                        <span class="f-content"> Study</span>
+                        <span class="f-content"> Travel</span>
+                        <span class="f-content"> Apartments</span>
+                        <span class="f-content"> Store</span>
+                        <span class="f-content"> Classifieds</span>
+                        <span class="f-content"> Health</span>
+                        <span class="f-content"> Blog</span>
                     </div>
                     <div>
-                        <button class="btn">Browse now</button>
-                        <button class="btn">Browse now</button>
-                        <button class="btn">Browse now</button>
-                        <button class="btn">Browse now</button>
+                        <button class="btn common-btn">Post Jobs</button>
+                        <button class="btn common-btn">List Properies</button>
+                        <button class="btn common-btn">Advertise</button>
+                        <button class="btn common-btn">English</button>
+                    </div>
+                    <div class="footer-div">
+                        <span class="gplus">© 2021 GPlusMedia Inc.</span>
+                        <span class="fo-content">TERMS OF USE</span>
+                        <span class="divider">|</span>
+                        <span class="fo-content">PRIVACY POLICY</span>
+                        <span class="divider">|</span>
+                        <span class="fo-content">SITEMAP</span>
+                        <span class="divider">|</span>
+                        <span class="fo-content">FAQ</span>
+                        <span class="divider">|</span>
+                        <span class="fo-content">CONTACT US</span>
+                        <span class="divider">|</span>
+                        <span class="fo-content">ABOUT GAIJINPOT</span>
+                        <span class="divider">|</span>
+                        <span class="fo-content">COMPANY PROFILE</span>
                     </div>
                     <div>
-                        <span>2021GPlusMedia Inc.</span>
-                        <span>TERMS OF USE</span>
-                        <span>|</span>
-                        <span class="f-content">PRIVACY POLICY</span>
-                        <span>|</span>
-                        <span class="f-content">SITEMAP</span>
-                        <span>|</span>
-                        <span class="f-content">FAQ</span>
-                        <span>|</span>
-                        <span class="f-content">CONTACT US</span>
-                        <span>|</span>
-                        <span class="f-content">ABOUT GAIJINPOT</span>
-                        <span>|</span>
-                        <span class="f-content">COMPANY PROFILE</span>
-                    </div>
-                    <div>
-                        <i class="fa fa-facebook-square "></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <i class="fa fa-whatsapp " aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i><br />
+                        <i class="fa fa-facebook-square cust-ic"></i>
+                        <i class="fa fa-twitter cust-ic" aria-hidden="true"></i>
+                        <i class="fa fa-youtube-play cust-ic" aria-hidden="true"></i>
+                        <i class="fa fa-whatsapp cust-ic" aria-hidden="true"></i>
+                        <i class="fa fa-twitter cust-ic" aria-hidden="true"></i><br />
 
                     </div>
 
@@ -522,14 +592,21 @@
         </div>
     </footer>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidepanel").style.width = "250px";
-        }
 
-        function closeNav() {
-            document.getElementById("mySidepanel").style.width = "0";
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
         }
+    </script>
+    <script>
+        function closeit() {
+            document.getElementById('myDIV').setAttribute("style", "display:none");
+        } 
     </script>
 
 </body>
